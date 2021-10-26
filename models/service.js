@@ -1,0 +1,51 @@
+const mongoose=require("mongoose")
+const Service=mongoose.model('services',{
+    type:{
+        type:String
+    },
+    lib:{
+        type:String,
+        required:true
+    },
+    categorie:{
+        type:String
+    },
+    code:{
+        type:String
+    },
+    marque:{
+        type:String
+    },
+    description:{
+        type:String
+    },
+    image: {
+        type: String
+    },
+    prix:{
+        type:String,
+        required:true
+    },
+    quantite:{
+        type:Number
+    },
+    tpe:{
+        type:String
+    },
+    unite:{
+        type:String
+    },
+    tva:{
+        type:String
+    },
+    taxe:{
+        type:String
+    },
+    resultat_ht:{
+        type:String
+    },
+    resultat_ttc:{
+        type:String
+    }
+})
+module.exports=Service
